@@ -9,21 +9,15 @@ document.addEventListener('DOMContentLoaded', () => {
 }, false);
 
 //Obtener los datos y asignar todo lo necesario a las tareas de la lista
-const get = () => {
-    list.innerHTML = "";
-    fetch(apiUrl, {
-        method: 'GET'
-    }) 
-    .then(response => {
-        return response.json()
-    })
-    .then(response => {
-        listarr = response.data;
-        //console.log(listarr) pa chequear su interior
-        fillArray();
-        setChangeListener();
-        completedTasks();
-    });
+const get = async () => {
+    list.textContent = "";
+    const response = await fetch(apiUrl, {method: 'GET'});
+    const json = await response.json();
+    const data = await json.data;
+    listarr = data;
+    fillArray();
+    setChangeListener();
+    completedTasks();
 }
 
 //Insertar la tarea
@@ -145,11 +139,6 @@ const createInputElement = (id) => {
 
     return inputElement;
 }
-
-// createDivElement = () => {
-//     const divElement = document.createElement("div");
-//     divElement.id = "checkboxes";
-// }
 
 const createSpanElement = (item) => {
     const spanElement = document.createElement("span");
