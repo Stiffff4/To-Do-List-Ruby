@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 
+  item: MyString
+  done: MyString
+  trash: MyString
+
+two:
+  id: 
+  item: MyString
+  done: MyString
+  trash: MyString

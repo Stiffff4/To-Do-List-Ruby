@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+        <div class="neum">
+            <div class="header">
+                <h1 class="title">To-do List</h1>
+            </div>
+            
+            <div class="searchBar">
+                <form id="searchbar">
+                    <input type="text" placeholder="Search Task Here...">
+                    <!-- <input type="submit" value="Search"> -->
+                </form>
+                
+            </div>
+
+            
+
+            <div class="task" id="task">
+                <ul>
+                    <li>
+                        <input type="checkbox" class="checkbox">
+                        <span class="text">Write a Book</span>
+                        <img alt="svgImg" class='imgTrash' src="./img/Trash.svg"/>
+
+                        <!-- IMAGEN ANTERIOR DE LA BASURITA SIN DISENO -->
+                        <!-- <img src="https://img.icons8.com/material-rounded/24/000000/trash.png"/> -->
+                        <!-- <img alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjYiIGhlaWdodD0iMjYiCnZpZXdCb3g9IjAgMCAyMjYgMjI2IgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIuNDg2LDIuNDg2KSBzY2FsZSgwLjk3OCwwLjk3OCkiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im5vbmUiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWRhc2hhcnJheT0iIiBzdHJva2UtZGFzaG9mZnNldD0iMCIgZm9udC1mYW1pbHk9Im5vbmUiIGZvbnQtd2VpZ2h0PSJub25lIiBmb250LXNpemU9Im5vbmUiIHRleHQtYW5jaG9yPSJub25lIiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IG5vcm1hbCI+PGcgZmlsbD0iIzQyNWU1NiIgc3Ryb2tlPSIjNmM5YjhkIiBzdHJva2Utd2lkdGg9IjUiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0xMzAuMzg0NjIsLTAuMjcxNjNjNy4yNjYyMywwIDE0LjM5NjYzLDEuNDI2MDkgMTkuNTU3NjksNi41MTkyM2M1LjE2MTA2LDUuMDkzMTUgNi43OTA4NywxMi4zMjU0MiA2Ljc5MDg3LDE5LjgyOTMzaDM0LjQ5NzZjNC43ODc1NiwwIDguNjkyMzEsMy45MDQ3NSA4LjY5MjMxLDguNjkyMzFoOC42OTIzMXYxNy4zODQ2MmgtMTkxLjIzMDc3di0xNy4zODQ2Mmg4LjY5MjMxYzAsLTQuNzg3NTYgMy45MDQ3NSwtOC42OTIzMSA4LjY5MjMxLC04LjY5MjMxaDM0LjQ5NzZjMCwtNy41MDM5IDEuNjI5ODEsLTE0LjczNjE3IDYuNzkwODcsLTE5LjgyOTMzYzUuMTYxMDYsLTUuMDkzMTQgMTIuMjkxNDcsLTYuNTE5MjMgMTkuNTU3NjksLTYuNTE5MjN6TTg4LjgyNDUyLDE5LjI4NjA2Yy0wLjU0MzI3LDAuNTA5MzIgLTEuNjI5ODEsMS45MzUzOSAtMS42Mjk4MSw2Ljc5MDg3aDUxLjYxMDU4YzAsLTQuODU1NDcgLTEuMDg2NTQsLTYuMjgxNTUgLTEuNjI5ODEsLTYuNzkwODdjLTAuNTQzMjcsLTAuNTA5MzIgLTIuMDM3MjYsLTEuNjI5ODEgLTYuNzkwODcsLTEuNjI5ODFoLTM0Ljc2OTIzYy00Ljc1MzYxLDAgLTYuMjQ3NiwxLjEyMDQ5IC02Ljc5MDg3LDEuNjI5ODF6TTE5MS4yMzA3Nyw2MC44NDYxNXYxMzkuMDc2OTJjMCwxNC4zNjI2OCAtMTEuNzE0MjQsMjYuMDc2OTIgLTI2LjA3NjkyLDI2LjA3NjkyaC0xMDQuMzA3NjljLTE0LjM2MjY4LDAgLTI2LjA3NjkyLC0xMS43MTQyNCAtMjYuMDc2OTIsLTI2LjA3Njkydi0xMzkuMDc2OTJ6TTY5LjUzODQ2LDE5MS4yMzA3N2gxNy4zODQ2MnYtMTA0LjMwNzY5aC0xNy4zODQ2MnpNMTA0LjMwNzY5LDE5MS4yMzA3N2gxNy4zODQ2MnYtMTA0LjMwNzY5aC0xNy4zODQ2MnpNMTM5LjA3NjkyLDE5MS4yMzA3N2gxNy4zODQ2MnYtMTA0LjMwNzY5aC0xNy4zODQ2MnoiPjwvcGF0aD48L2c+PHBhdGggZD0iTTAsMjI2di0yMjZoMjI2djIyNnoiIGZpbGw9Im5vbmUiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWpvaW49Im1pdGVyIj48L3BhdGg+PGcgZmlsbD0iIzQyNWU1NiIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiPjxwYXRoIGQ9Ik05NS42MTUzOCwtMC4yNzE2M2MtNy4yNjYyMiwwIC0xNC4zOTY2MywxLjQyNjA5IC0xOS41NTc2OSw2LjUxOTIzYy01LjE2MTA2LDUuMDkzMTUgLTYuNzkwODcsMTIuMzI1NDIgLTYuNzkwODcsMTkuODI5MzNoLTM0LjQ5NzZjLTQuNzg3NTYsMCAtOC42OTIzMSwzLjkwNDc1IC04LjY5MjMxLDguNjkyMzFoLTguNjkyMzF2MTcuMzg0NjJoMTkxLjIzMDc3di0xNy4zODQ2MmgtOC42OTIzMWMwLC00Ljc4NzU2IC0zLjkwNDc1LC04LjY5MjMxIC04LjY5MjMxLC04LjY5MjMxaC0zNC40OTc2YzAsLTcuNTAzOSAtMS42Mjk4MSwtMTQuNzM2MTcgLTYuNzkwODcsLTE5LjgyOTMzYy01LjE2MTA2LC01LjA5MzE0IC0xMi4yOTE0NiwtNi41MTkyMyAtMTkuNTU3NjksLTYuNTE5MjN6TTk1LjYxNTM4LDE3LjY1NjI1aDM0Ljc2OTIzYzQuNzUzNjEsMCA2LjI0NzYsMS4xMjA0OSA2Ljc5MDg3LDEuNjI5ODFjMC41NDMyNywwLjUwOTMyIDEuNjI5ODEsMS45MzUzOSAxLjYyOTgxLDYuNzkwODdoLTUxLjYxMDU4YzAsLTQuODU1NDcgMS4wODY1NCwtNi4yODE1NSAxLjYyOTgxLC02Ljc5MDg3YzAuNTQzMjcsLTAuNTA5MzIgMi4wMzcyNiwtMS42Mjk4MSA2Ljc5MDg3LC0xLjYyOTgxek0zNC43NjkyMyw2MC44NDYxNXYxMzkuMDc2OTJjMCwxNC4zNjI2OCAxMS43MTQyNCwyNi4wNzY5MiAyNi4wNzY5MiwyNi4wNzY5MmgxMDQuMzA3NjljMTQuMzYyNjgsMCAyNi4wNzY5MiwtMTEuNzE0MjQgMjYuMDc2OTIsLTI2LjA3Njkydi0xMzkuMDc2OTJ6TTY5LjUzODQ2LDg2LjkyMzA4aDE3LjM4NDYydjEwNC4zMDc2OWgtMTcuMzg0NjJ6TTEwNC4zMDc2OSw4Ni45MjMwOGgxNy4zODQ2MnYxMDQuMzA3NjloLTE3LjM4NDYyek0xMzkuMDc2OTIsODYuOTIzMDhoMTcuMzg0NjJ2MTA0LjMwNzY5aC0xNy4zODQ2MnoiPjwvcGF0aD48L2c+PHBhdGggZD0iIiBmaWxsPSJub25lIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciI+PC9wYXRoPjwvZz48L2c+PC9zdmc+"/> -->
+                    </li>
+
+                    <li>
+                        <input type="checkbox" class="checkbox">
+                        <span class="text">Send an email</span>
+                        <img alt="svgImg" class='imgTrash' src="./img/Trash.svg"/>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" class="checkbox">
+                        <span class="text">Drink Juice</span>
+                        <img alt="svgImg" class='imgTrash' src="./img/Trash.svg"/>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" class="checkbox">
+                        <span class="text">Buy a new Keyboard</span>
+                        <img alt="svgImg" class='imgTrash' src="./img/Trash.svg"/>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" class="checkbox">
+                        <span class="text">Stay at home</span>
+                        <img alt="svgImg" class='imgTrash' src="./img/Trash.svg"/>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="addBar">
+                <input type="text" class="addinput" onfocus="this.value=''" placeholder="Add Task Here..." id="addinput">
+                <input type="submit" value="Add" class="addbutton">
+            </div>
+        </div>
+
+<script src="<%= 'C:\Users\Stiff\Desktop\To-Do List (rails)\front (js)\app.js'%>"></script>
+</body>
+</html>

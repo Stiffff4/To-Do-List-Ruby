@@ -1,0 +1,67 @@
+body {
+    background: url(images/galaxy.jpg);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    margin: 10% 0;
+    text-align: center;
+}
+
+.title {
+    font-weight: bold;
+    color: black;
+}
+
+.content {
+    background-color: white;
+    width: 315px;
+    height: 275px;
+    max-height: none;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#list {
+    list-style: none;
+    padding-inline-start: 0px;
+}
+
+#list li{
+    list-style: none;
+    padding: 10px 10px;
+}
+
+#list li input{
+    float: left;
+}
+
+#list li span{
+    float: center;
+}
+
+#list li i{
+    float: right;
+}
+
+#input {
+    justify-content: center;
+    outline: none;
+    background-color: white;
+    width: 300px;
+    font-size: 1.15rem;
+    margin: 0.25rem;
+    border-radius: 5px;
+}
+
+.line-through{
+    text-decoration: line-through;
+}
+
+.hide-check{
+    display: none;
+}
