@@ -27,7 +27,7 @@ module Api
             #[HTTPPUT]
             #Cambia el estatus de done a 1, que significa que la tarea ha sido completada.
             def update
-                item = Item.find(params[:id])
+                item = findItem
                 if item.update_column(:done, "1")
                     render json: {data:item}, status: :ok
                 else
@@ -38,11 +38,21 @@ module Api
             #[HTTPDELETE]
             #No lo borra como tal de la base de datos, solo cambia el estado "trash" a 1, que significa borrado.
             def destroy
-                item = Item.find(params[:id])
+                item = findItem
                 if item.update_column(:trash, "1")
                     render json: {data:item}, status: :ok
                 else
                     render json: {data:item}, status: :unprocessable_entity
+                end
+            end
+
+            #Para retornar el item si lo encuentra, pero un 404 si no lo encuentra.
+            def findItem
+                item = Item.find(params[:id])
+                if item
+                    return item
+                else
+                    return render json: {data: "Failure, could not find this item."}, status: :not_found
                 end
             end
 
